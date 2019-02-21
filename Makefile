@@ -16,7 +16,7 @@ all: docker-image docker-image-push
 
 docker-image:
 	@echo -e "$(OK_COLOR)==> Docker build image : ${PLUGIN_IMAGE} $(NO_COLOR)"
-	docker build -t ${PLUGIN_IMAGE} -f Dockerfile.pi .
+	docker build -t ${PLUGIN_IMAGE} -f Dockerfile.rpi .
 
 docker-image-push:
 	@echo -e "$(OK_COLOR)==> push plugin : ${PLUGIN_IMAGE}$(NO_COLOR)"
