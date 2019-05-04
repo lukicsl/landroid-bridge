@@ -8,6 +8,9 @@ COPY package*.json .
 # Restore node modules
 RUN npm install
 
+# Add everything else not excluded by .dockerignore
+COPY . .
+
 # Build it
 RUN npm update
 RUN npm run build-prod
