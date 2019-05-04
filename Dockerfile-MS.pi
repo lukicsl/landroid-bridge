@@ -12,7 +12,6 @@ RUN npm install
 COPY . .
 
 # Build it
-RUN npm update
 RUN npm run build-prod
 
 
