@@ -17,6 +17,7 @@ RUN npm run build-prod
 
 
 FROM node:alpine
+WORKDIR /usr/src/app
 USER root
 RUN apk add --no-cache make gcc g++ python git nodejs nodejs-npm yarn \
 	&& rm -rf /var/lib/apt/lists/* \
