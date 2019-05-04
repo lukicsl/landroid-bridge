@@ -24,7 +24,7 @@ RUN apk add --no-cache make gcc g++ python git nodejs nodejs-npm yarn \
     /usr/share/man \
     /tmp/*
 WORKDIR /root/
-COPY --from=node_cache /cache/ .
+COPY --from=node_cache /usr/src/app .
 
 # Copy source files, and possibily invalidate so we have to rebuild
 COPY . . 
