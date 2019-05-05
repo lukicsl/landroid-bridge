@@ -14,7 +14,7 @@ COPY . .
 # Build it
 RUN npm run build-prod
 
-
+# 2nd stage
 FROM node:8.16.0-alpine 
 WORKDIR /usr/src/app
 USER root
