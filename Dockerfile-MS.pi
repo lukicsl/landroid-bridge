@@ -1,4 +1,4 @@
-FROM arm32v7/node:8 as node_cache
+FROM arm32v7/node:12 as node_cache
 
 WORKDIR /usr/src/app
 
